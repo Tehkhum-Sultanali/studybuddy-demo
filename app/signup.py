@@ -20,7 +20,19 @@ db = Database()
 
 
 def create_account(user):
+    import datetime
+
     birthday = user["birthday"]
+
+    today = datetime.date.today()
+    age = today.year - birthday.year - (
+        (today.month, today.day) < (birthday.month, birthday.day)
+    )
+
+    if age < 13 and not user.get("parental_consent_verified"):
+        raise ValueError(
+            "Users under 13 require verified parental consent before account creation."
+        )
 
     account = db.create(
         name=user["name"],
