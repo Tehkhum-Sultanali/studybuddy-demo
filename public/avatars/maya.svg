@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <rect width="160" height="160" rx="80" fill="#3f6f5c"/>
+  <circle cx="80" cy="64" r="28" fill="#ffffff" fill-opacity="0.25"/>
+  <path d="M28 140c8-30 30-44 52-44s44 14 52 44" fill="#ffffff" fill-opacity="0.25"/>
+  <text x="80" y="92" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">MR</text>
+</svg>
